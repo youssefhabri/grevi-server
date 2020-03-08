@@ -1,0 +1,14 @@
+INSERT INTO groups (id, name, creator_id, chat_id, created_at, updated_at) VALUES (1, 'Greenvironment Dev Team', 39, 8, '2020-01-07 11:13:23.724000', '2020-01-07 11:13:23.724000');
+INSERT INTO groups (id, name, creator_id, chat_id, created_at, updated_at) VALUES (2, 'Greenvironment Dev Team', 39, 9, '2020-01-07 11:18:44.532000', '2020-01-07 11:18:44.532000');
+INSERT INTO groups (id, name, creator_id, chat_id, created_at, updated_at) VALUES (3, 'testgruppe', 39, 10, '2020-01-07 14:35:01.265000', '2020-01-07 14:35:01.265000');
+INSERT INTO groups (id, name, creator_id, chat_id, created_at, updated_at) VALUES (4, 'testgruppe', 39, 11, '2020-01-07 14:35:56.338000', '2020-01-07 14:35:56.338000');
+INSERT INTO groups (id, name, creator_id, chat_id, created_at, updated_at) VALUES (5, 'testgruppe', 39, 12, '2020-01-07 14:36:00.979000', '2020-01-07 14:36:00.979000');
+INSERT INTO groups (id, name, creator_id, chat_id, created_at, updated_at) VALUES (6, 'Greenvironment Dev Team', 52, 13, '2020-01-07 18:25:58.546000', '2020-01-07 18:25:58.546000');
+INSERT INTO groups (id, name, creator_id, chat_id, created_at, updated_at) VALUES (7, '', 52, 14, '2020-01-07 18:33:41.169000', '2020-01-07 18:33:41.169000');
+INSERT INTO groups (id, name, creator_id, chat_id, created_at, updated_at) VALUES (8, '', 52, 15, '2020-01-07 18:33:43.569000', '2020-01-07 18:33:43.569000');
+INSERT INTO groups (id, name, creator_id, chat_id, created_at, updated_at) VALUES (9, ' ', 52, 16, '2020-01-07 18:33:50.962000', '2020-01-07 18:33:50.962000');
+INSERT INTO groups (id, name, creator_id, chat_id, created_at, updated_at) VALUES (10, 'testLOOOOL', 52, 17, '2020-01-07 19:34:40.391000', '2020-01-07 19:34:40.391000');
+INSERT INTO groups (id, name, creator_id, chat_id, created_at, updated_at) VALUES (11, 'Die Coolen', 20, 18, '2020-01-07 21:01:39.391000', '2020-01-07 21:01:39.391000');
+INSERT INTO groups (id, name, creator_id, chat_id, created_at, updated_at) VALUES (12, 'serdtukzgl', 39, 19, '2020-01-08 12:28:08.168000', '2020-01-08 12:28:08.168000');
+INSERT INTO groups (id, name, creator_id, chat_id, created_at, updated_at) VALUES (13, 'Greenvironment Entwickler', 20, 20, '2020-01-09 08:02:19.181000', '2020-01-09 08:02:19.181000');
+INSERT INTO groups (id, name, creator_id, chat_id, created_at, updated_at) VALUES (14, 'Die Coolen 2', 20, 21, '2020-01-09 17:00:37.084000', '2020-01-09 17:00:37.084000');

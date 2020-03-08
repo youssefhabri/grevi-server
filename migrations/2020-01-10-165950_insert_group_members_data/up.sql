@@ -1,0 +1,16 @@
+INSERT INTO group_members (user_id, group_id, created_at, updated_at) VALUES (52, 1, '2020-01-07 11:13:23.752000', '2020-01-07 11:13:23.752000');
+INSERT INTO group_members (user_id, group_id, created_at, updated_at) VALUES (39, 1, '2020-01-07 11:13:23.757000', '2020-01-07 11:13:23.757000');
+INSERT INTO group_members (user_id, group_id, created_at, updated_at) VALUES (52, 2, '2020-01-07 11:18:44.547000', '2020-01-07 11:18:44.547000');
+INSERT INTO group_members (user_id, group_id, created_at, updated_at) VALUES (39, 2, '2020-01-07 11:18:44.551000', '2020-01-07 11:18:44.551000');
+INSERT INTO group_members (user_id, group_id, created_at, updated_at) VALUES (39, 3, '2020-01-07 14:35:01.287000', '2020-01-07 14:35:01.287000');
+INSERT INTO group_members (user_id, group_id, created_at, updated_at) VALUES (39, 4, '2020-01-07 14:35:56.351000', '2020-01-07 14:35:56.351000');
+INSERT INTO group_members (user_id, group_id, created_at, updated_at) VALUES (39, 5, '2020-01-07 14:36:00.993000', '2020-01-07 14:36:00.993000');
+INSERT INTO group_members (user_id, group_id, created_at, updated_at) VALUES (52, 6, '2020-01-07 18:25:58.565000', '2020-01-07 18:25:58.565000');
+INSERT INTO group_members (user_id, group_id, created_at, updated_at) VALUES (52, 7, '2020-01-07 18:33:41.183000', '2020-01-07 18:33:41.183000');
+INSERT INTO group_members (user_id, group_id, created_at, updated_at) VALUES (52, 8, '2020-01-07 18:33:43.580000', '2020-01-07 18:33:43.580000');
+INSERT INTO group_members (user_id, group_id, created_at, updated_at) VALUES (52, 9, '2020-01-07 18:33:50.977000', '2020-01-07 18:33:50.977000');
+INSERT INTO group_members (user_id, group_id, created_at, updated_at) VALUES (52, 10, '2020-01-07 19:34:40.404000', '2020-01-07 19:34:40.404000');
+INSERT INTO group_members (user_id, group_id, created_at, updated_at) VALUES (20, 11, '2020-01-07 21:01:39.412000', '2020-01-07 21:01:39.412000');
+INSERT INTO group_members (user_id, group_id, created_at, updated_at) VALUES (39, 12, '2020-01-08 12:28:08.188000', '2020-01-08 12:28:08.188000');
+INSERT INTO group_members (user_id, group_id, created_at, updated_at) VALUES (20, 13, '2020-01-09 08:02:19.198000', '2020-01-09 08:02:19.198000');
+INSERT INTO group_members (user_id, group_id, created_at, updated_at) VALUES (20, 14, '2020-01-09 17:00:37.102000', '2020-01-09 17:00:37.102000');

@@ -1,0 +1,3 @@
+directive @juniper(
+    ownership: String = "owned" | "borrowed"
+) on FIELD_DEFINITION | FIELD

@@ -1,0 +1,2 @@
+[global.databases]
+grevi_db = { url = "postgres://localhost/grevi" }

@@ -1,0 +1,136 @@
+schema {
+    query: Query,
+    mutation: Mutation
+}
+
+type Query {
+    "returns the user object for a given user id or a handle (only one required)"
+    getUser(userId: ID, handle: String): User @juniper(ownership: "owned")
+}
+
+type Mutation {
+    noop: Boolean!
+}
+
+interface UserData {
+    "url for the Profile picture of the User"
+    profilePicture: String @juniper(ownership: "owned")
+
+    "name of the User"
+    name: String! @juniper(ownership: "owned")
+
+    "unique identifier name from the User"
+    handle: String! @juniper(ownership: "owned")
+
+    "Id of the User"
+    id: ID! @juniper(ownership: "owned")
+
+    "DEPRECATED! the total number of posts the user posted"
+    numberOfPosts: Int! @juniper(ownership: "owned")
+
+    "the number of posts the user has created"
+    postCount: Int! @juniper(ownership: "owned")
+
+    "returns a given number of posts of a user"
+    posts(first: Int=10, offset: Int=0): [Post] @juniper(ownership: "owned")
+
+    "creation date of the user account"
+    joinedAt: String! @juniper(ownership: "owned")
+
+    "all friends of the user"
+    friends(first: Int=10, offset: Int=0): [User] @juniper(ownership: "owned")
+
+    "The number of friends the user has"
+    friendCount: Int! @juniper(ownership: "owned")
+#
+#    "The groups the user has joined"
+#    groups(first: Int=10, offset: Int=0): [Group] @juniper(ownership: "owned")
+
+    "The numbef of groups the user has joined"
+    groupCount: Int! @juniper(ownership: "owned")
+
+    "the points of the user"
+    points: Int! @juniper(ownership: "owned")
+
+    "the levels of the user depending on the points"
+    level: Int! @juniper(ownership: "owned")
+}
+
+"represents a single user account"
+type User implements UserData{
+    "url for the Profile picture of the User"
+    profilePicture: String @juniper(ownership: "owned")
+
+    "name of the User"
+    name: String! @juniper(ownership: "owned")
+
+    "unique identifier name from the User"
+    handle: String! @juniper(ownership: "owned")
+
+    "Id of the User"
+    id: ID! @juniper(ownership: "owned")
+
+    "DEPRECATED! the total number of posts the user posted"
+    numberOfPosts: Int! @juniper(ownership: "owned")
+
+    "the number of posts the user has created"
+    postCount: Int! @juniper(ownership: "owned")
+
+    "returns a given number of posts of a user"
+    posts(first: Int=10, offset: Int=0): [Post] @juniper(ownership: "owned")
+
+    "creation date of the user account"
+    joinedAt: String! @juniper(ownership: "owned")
+
+    "all friends of the user"
+    friends(first: Int=10, offset: Int=0): [User] @juniper(ownership: "owned")
+
+    "The number of friends the user has"
+    friendCount: Int! @juniper(ownership: "owned")
+
+    "the points of the user"
+    points: Int! @juniper(ownership: "owned")
+
+#    "the groups the user has joined"
+#    groups(first: Int=10, offset: Int=0): [Group] @juniper(ownership: "owned")
+
+    "The numbef of groups the user has joined"
+    groupCount: Int! @juniper(ownership: "owned")
+
+    "the levels of the user depending on the points"
+    level: Int! @juniper(ownership: "owned")
+}
+
+"represents a single user post"
+type Post {
+
+    "The id of the post."
+    id: ID! @juniper(ownership: "owned")
+
+    "the text of the post"
+    content: String @juniper(ownership: "owned")
+
+    "the content of the post rendered by markdown-it"
+    htmlContent: String @juniper(ownership: "owned")
+
+    "upvotes of the Post"
+    upvotes: Int! @juniper(ownership: "owned")
+
+    "downvotes of the Post"
+    downvotes: Int! @juniper(ownership: "owned")
+
+    "the user that is the author of the Post"
+    author: User! @juniper(ownership: "owned")
+
+    "date the post was created"
+    createdAt: String! @juniper(ownership: "owned")
+
+    "the type of vote the user performed on the post"
+    userVote(userId: ID!): VoteType @juniper(ownership: "owned")
+}
+
+"represents the type of vote performed on a post"
+enum VoteType {
+    UPVOTE
+    DOWNVOTE
+}
